@@ -5,13 +5,17 @@ A small Python app with a [Dear ImGui](https://github.com/ocornut/imgui) interfa
 year and it tells you which day of the week that date falls on.
 
 ## Features
+- Dark dashboard layout: icon sidebar, header with typing text, translucent cards
+- One warm palette (near-black with orange and amber accents), no rainbow colors
+- **Month** card: dropdown and a bar chart of month lengths
+- **Day** card: slider (limited to the real month length, leap years included) and a mini calendar
+- **Year** card: number input and bars showing the weekday of the same date in nearby years
+- **Weekday** card: weekday chips and an animated tick gauge showing the result
+- **Year Progress** and **From Today** cards: day-of-year, week, quarter and the distance from today
+- Animations: staggered card entrance, gauge sweep, count-up numbers, flowing waves,
+  a breathing background glow and drifting specks of light
 - Weekday computed with Zeller's congruence (checked against Python's `datetime`)
-- Day slider limited to the real length of the month, leap years included
-- Animated gradient background with floating glowing orbs
-- Rainbow wavy title, pulsing button glow, card slide-in on launch
-- Slot-machine weekday spin, an elastic "pop" when it lands, and a confetti burst
-- The window shakes if the year is out of range (1 to 9999)
-- **Today** button, and **Enter** reveals the day
+- **Today** jumps to today's date; **Reveal Day** or **Enter** replays the reveal animation
 
 ## Run
 ```bash
